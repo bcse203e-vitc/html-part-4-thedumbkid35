@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order Form</title>
+</head>
+<body>
+    <form action="/login" method="post">
+        <h1>Product Order Form</h1>
+        <label>Name: </label>
+        <input type="text"><br><br>
+        <label>Email: </label>
+        <input type="text" placeholder="example@gmail.com"><br><br>
+        <label>Address: </label>
+        <input type="text"><br><br>
+        <label>Product: </label>
+        <input list="product">
+        <datalist>
+            <option>TV</option>
+            <option>Fridge</option>
+            <option>Washing Machine</option>
+            <option>AC</option>
+        </datalist><br><br>
+        <label>Quantity: </label>
+        <input type="number" min="1" required><br><br>
+        <label>Delivery Preferences: </label>
+        <br>
+        <br>
+        <input type="radio">
+        <label>Standard</label><br><br>
+        <input type="radio">
+        <label>Express</label><br><br>
+        <button>Apply Coupon</button>
+    </form>
+</body>
+</html>

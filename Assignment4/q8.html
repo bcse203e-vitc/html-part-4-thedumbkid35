@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Form</title>
+</head>
+<body>
+    <form>
+        <h2>Online Quiz</h2>
+
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email" required><br><br>
+
+        <label>Question 1: What is the capital of France?</label><br>
+        <input type="radio" name="question1" value="paris" required> Paris<br>
+        <input type="radio" name="question1" value="london"> London<br>
+        <input type="radio" name="question1" value="berlin"> Berlin<br><br>
+
+        <label>Question 2: Select all prime numbers:</label><br>
+        <input type="checkbox" name="question2" value="2"> 2<br>
+        <input type="checkbox" name="question2" value="3"> 3<br>
+        <input type="checkbox" name="question2" value="4"> 4<br>
+        <input type="checkbox" name="question2" value="5"> 5<br><br>
+
+        <label>Time Remaining:</label><br>
+        <input type="text" name="timer" placeholder="10:00" readonly><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

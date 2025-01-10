@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking Form</title>
+</head>
+<body>
+    <form>
+        <h2>Travel Booking Form</h2>
+
+        <label>Full Name:</label><br>
+        <input type="text" name="full_name" required><br><br>
+
+        <label>Contact Information:</label><br>
+        <input type="text" name="contact_info" required><br><br>
+
+        <label>Destination:</label><br>
+        <select name="destination" required>
+            <option value="">--Select Destination--</option>
+            <option value="paris">Paris</option>
+            <option value="new_york">New York</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="sydney">Sydney</option>
+        </select><br><br>
+
+        <label>Travel Dates:</label><br>
+        <input type="date" name="travel_date" required><br><br>
+
+        <label>Number of Travelers:</label><br>
+        <input type="number" name="travelers" min="1" required><br><br>
+
+        <label>Travel Class:</label><br>
+        <input type="radio" name="travel_class" value="economy" required> Economy<br>
+        <input type="radio" name="travel_class" value="business" required> Business<br>
+        <input type="radio" name="travel_class" value="first_class" required> First Class<br><br>
+
+        <input type="checkbox" name="travel_insurance" value="yes"> Opt for Travel Insurance<br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
