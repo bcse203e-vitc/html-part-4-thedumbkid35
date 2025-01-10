@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Survey Form</title>
+</head>
+<body>
+    <form>
+        <h2>Health Survey Form</h2>
+
+        <label>Name:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age" min="0" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="male" required> Male<br>
+        <input type="radio" name="gender" value="female" required> Female<br>
+        <input type="radio" name="gender" value="other" required> Other<br><br>
+
+        <label>Height (in cm):</label><br>
+        <input type="number" name="height" min="0" required><br><br>
+
+        <label>Weight (in kg):</label><br>
+        <input type="number" name="weight" min="0" required><br><br>
+
+        <label>Lifestyle Questions:</label><br>
+        <input type="checkbox" name="lifestyle" value="smoking"> Smoking<br>
+        <input type="checkbox" name="lifestyle" value="alcohol"> Alcohol Consumption<br>
+        <input type="checkbox" name="lifestyle" value="exercise"> Regular Exercise<br>
+        <input type="checkbox" name="lifestyle" value="balanced_diet"> Balanced Diet<br><br>
+
+        <label>Dietary Preference:</label><br>
+        <select name="dietary_preference" required>
+            <option value="">--Select--</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="non_vegetarian">Non-Vegetarian</option>
+            <option value="vegan">Vegan</option>
+        </select><br><br>
+
+        <label>Activity Level:</label><br>
+        <select name="activity_level" required>
+            <option value="">--Select--</option>
+            <option value="sedentary">Sedentary</option>
+            <option value="moderate">Moderate</option>
+            <option value="active">Active</option>
+        </select><br><br>
+
+
+        <label>Optional Health Concerns </label><br><br>
+        <textarea rows="10"></textarea><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
